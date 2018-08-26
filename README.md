@@ -1,4 +1,6 @@
 # Chameleon Classic
+#### No longer maintained. While not exactly the same, the ![new Chameleon](https://github.com/ianmartinez/Chameleon) achieves the same thing but for desktop wallpapers.
+
 The old version of Chameleon for Windows Vista &amp; 7 that changes Aero colors instead of desktop wallpapers. The weather portion of it no longer works because Yahoo removed the weather api that it used.
 
 ![Promo](https://github.com/ianmartinez/ChameleonClassic/raw/master/Screenshots/promo.jpg)

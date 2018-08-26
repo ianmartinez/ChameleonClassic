@@ -1,0 +1,768 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Chameleon
+</name>
+</assembly>
+<members>
+<member name="T:Chameleon.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Chameleon.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Chameleon.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Chameleon.My.Resources.Resources.Disabled">
+<summary>
+  Looks up a localized string similar to Radius=3
+
+Active Colors=235,236,237|235,236,237
+Active Positions=0|1
+Active Angle=90
+Active Border Color=#c9c9c9
+Active Text Color=64,64,64
+Active Highlight Color=230,255,255,255.
+</summary>
+</member>
+<member name="P:Chameleon.My.Resources.Resources.Enabled">
+<summary>
+  Looks up a localized string similar to Radius=3
+
+Active Colors=254,254,254|235,236,237
+Active Positions=0|1
+Active Angle=90
+Active Border Color=#c9c9c9
+Active Text Color=64,64,64
+Active Highlight Color=230,255,255,255
+
+Hover Colors=254,254,255|246,246,247
+Hover Positions=0|1
+Hover Angle=90
+Hover Border Color=#c9c9c9
+Hover Text Color=64,64,64
+Hover Highlight Color=230,255,255,255
+
+Pressed Colors=186,188,191|212,214,217|212,214,217
+Pressed Positions=0|0.2|1
+Pressed Angle=90
+Pressed Border Color=#c9c9c9
+Pressed Text Color=94,95, [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="T:Chameleon.CIELab">
+ <summary>
+ Structure to define CIELab.
+ </summary>
+</member>
+<member name="M:Chameleon.CIELab.#ctor(System.Double,System.Double,System.Double)">
+ <summary>
+ Creates an instance of a CIELAB structure.
+ </summary>
+</member>
+<member name="T:Chameleon.CIEXYZ">
+ <summary>
+ Structure to define CIEXYZ.
+ </summary>
+</member>
+<member name="M:Chameleon.CIEXYZ.#ctor(System.Double,System.Double,System.Double)">
+ <summary>
+ Creates an instance of a CIEXYZ structure.
+ </summary>
+</member>
+<member name="T:Chameleon.CMYK">
+ <summary>
+ Structure to define CMYK.
+ </summary>
+</member>
+<member name="M:Chameleon.CMYK.#ctor(System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ Creates an instance of a CMYK structure.
+ </summary>
+ <param name="c">Cyan value (must be between 0 and 1).</param>
+ <param name="m">Magenta value (must be between 0 and 1).</param>
+ <param name="y">Yellow value (must be between 0 and 1).</param>
+ <param name="k">Black value (must be between 0 and 1).</param>
+</member>
+<member name="T:Chameleon.ColorHelper">
+ <summary>
+ Provides methods to convert from a color space to an other.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.GetAlphaColor(System.Drawing.Color,System.Int32)">
+ <summary>
+ Gets the given color based on a color and an alpha.
+ </summary>
+ <param name="c">Color applying the alpha channel.</param>
+ <param name="alpha">Alpha channel value.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.GetBlendColor(System.Drawing.Color,System.Drawing.Color,System.Double)">
+ <summary>
+ Blends two colors.
+ </summary>
+ <param name="c1">First color to blend</param>
+ <param name="c2">Second color to blend</param>
+ <param name="ratio">Blend ratio. 0.5 will give even blend, 1.0 will return color1, 0.0 will return color2 and so on.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.GetBlendColor(System.Drawing.Color,System.Drawing.Color)">
+ <summary>
+ Makes an even blend between two colors.
+ </summary>
+ <param name="c1">First color to blend</param>
+ <param name="c2">Second color to blend</param>
+</member>
+<member name="M:Chameleon.ColorHelper.GetColorDistance(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ Gets the "distance" between two colors.
+ RGB colors must be normalized (eg. values in [0.0, 1.0]).
+ </summary>
+ <param name="r1">First color red component.</param>
+ <param name="g1">First color green component.</param>
+ <param name="b1">First color blue component.</param>
+ <param name="r2">Second color red component.</param>
+ <param name="g2">Second color green component.</param>
+ <param name="b2">Second color blue component.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.GetColorDistance(System.Double[],System.Double[])">
+ <summary>
+ Gets the "distance" between two colors.
+ RGB colors must be normalized (eg. values in [0.0, 1.0]).
+ </summary>
+ <param name="color1">First color [r,g,b]</param>
+ <param name="color2">Second color [r,g,b]</param>
+</member>
+<member name="M:Chameleon.ColorHelper.GetColorDistance(System.Drawing.Color,System.Drawing.Color)">
+ <summary>
+ Gets the "distance" between two colors.
+ </summary>
+ <param name="color1">First color.</param>
+ <param name="color2">Second color.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.GetWheelColors(System.Int32)">
+ <summary>
+ Gets visible colors (color wheel).
+ </summary>
+ <param name="alpha">
+ The alpha value used for each colors.
+ </param>
+</member>
+<member name="M:Chameleon.ColorHelper.GetSpectrumColors(System.Int32)">
+ <summary>
+ Gets visible spectrum colors.
+ </summary>
+ <param name="alpha">The alpha value used for each colors.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.GetSpectrumColors">
+ <summary>
+ Gets visible spectrum colors.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.HEXtoColor(System.String)">
+ <summary>
+ Converts a Hex color to a .net Color.
+ </summary>
+ <param name="hexColor">The desired hexadecimal color to convert.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoHEX(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Converts a RGB color format to an hexadecimal color.
+ </summary>
+ <param name="r">The Red value.</param>
+ <param name="g">The Green value.</param>
+ <param name="b">The Blue value.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.ColorToHEX(System.Drawing.Color)">
+ <summary>
+ Converts a .Net Color format to an hexadecimal color.
+ </summary>
+ <param name="c">The .net color to convert.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSBtoRGB(Chameleon.HSB)">
+ <summary>
+ Converts HSB to RGB.
+ </summary>
+ <param name="hsb">The HSB structure to convert.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSBtoRGB(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Converts HSB to RGB.
+ </summary>
+ <param name="H">Hue value. (must be between 0 and 360)</param>
+ <param name="S">Saturation value (must be between 0 and 100).</param>
+ <param name="b">Brigthness value (must be between 0 and 100).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSBtoRGB(System.Double,System.Double,System.Double)">
+ <summary> 
+ Converts HSB to a RGB.
+ </summary>
+ <param name="h">Hue value (must be between 0 and 360).</param>
+ <param name="s">Saturation value (must be between 0 and 1).</param>
+ <param name="b">Brightness value (must be between 0 and 1).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSBtoColor(Chameleon.HSB)">
+ <summary>
+ Converts HSB to .Net Color.
+ </summary>
+ <param name="hsb">the HSB structure to convert.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSBtoColor(System.Double,System.Double,System.Double)">
+ <summary> 
+ Converts HSB to a .Net Color.
+ </summary>
+ <param name="h">Hue value (must be between 0 and 360).</param>
+ <param name="s">Saturation value (must be between 0 and 1).</param>
+ <param name="b">Brightness value (must be between 0 and 1).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSLtoRGB(Chameleon.HSL)">
+ <summary>
+ Converts HSL to RGB.
+ </summary>
+ <param name="hsl">The HSL structure to convert.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSLtoRGB(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Converts HSL to RGB.
+ </summary>
+ <param name="H">Hue value. (must be between 0 and 360)</param>
+ <param name="S">Saturation value (must be between 0 and 100).</param>
+ <param name="L">Luminance value (must be between 0 and 100).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSLtoRGB(System.Double,System.Double,System.Double)">
+ <summary> 
+ Converts HSL to a .net Color.
+ </summary>
+ <param name="h">Hue value (must be between 0 and 360).</param>
+ <param name="s">Saturation value (must be between 0 and 1).</param>
+ <param name="l">Luminance value (must be between 0 and 1).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSLtoColor(Chameleon.HSL)">
+ <summary>
+ Converts HSL to .net Color.
+ </summary>
+ <param name="hsl">The HSL structure to convert.</param>
+</member>
+<member name="M:Chameleon.ColorHelper.HSLtoColor(System.Double,System.Double,System.Double)">
+ <summary>
+ Converts HSL to .net Color.
+ </summary>
+ <param name="h">Hue value (must be between 0 and 360).</param>
+ <param name="s">Saturation value (must be between 0 and 1).</param>
+ <param name="l">Luminance value (must be between 0 and 1).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoHSB(System.Drawing.Color)">
+ <summary> 
+ Converts .Net Color to HSB.
+ </summary> 
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoHSB(Chameleon.RGB)">
+ <summary> 
+ Converts RGB to HSB.
+ </summary> 
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoHSB(System.Int32,System.Int32,System.Int32)">
+ <summary> 
+ Converts RGB to HSB.
+ </summary> 
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoHSL(System.Drawing.Color)">
+ <summary> 
+ Converts .Net Color to HSL.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoHSL(Chameleon.RGB)">
+ <summary> 
+ Converts RGB to HSL.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoHSL(System.Int32,System.Int32,System.Int32)">
+ <summary> 
+ Converts RGB to HSL.
+ </summary>
+ <param name="red">Red value (must be between 0 and 255).</param>
+ <param name="green">Green value (must be between 0 and 255).</param>
+ <param name="blue">Blue value (must be between 0 and 255).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoCMYK(Chameleon.RGB)">
+ <summary>
+ Converts RGB to CMYK
+ </summary >
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoCMYK(System.Drawing.Color)">
+ <summary>
+ Converts .Net Color to CMYK
+ </summary >
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoCMYK(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Converts RGB to CMYK
+ </summary >
+ <param name="red">Red vaue must be in [0, 255].</param>
+ <param name="green">Green vaue must be in [0, 255].</param>
+ <param name="blue">Blue vaue must be in [0, 255].</param>
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoYUV(Chameleon.RGB)">
+ <summary>
+ Converts RGB to YUV.
+ </summary >
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoYUV(System.Drawing.Color)">
+ <summary>
+ Converts .Net Color to YUV.
+ </summary >
+</member>
+<member name="M:Chameleon.ColorHelper.RGBtoYUV(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Converts RGB to YUV.
+ </summary >
+ <param name="red">red must be in [0, 255].</param>
+ <param name="green">green must be in [0, 255].</param>
+ <param name="blue">blue must be in [0, 255].</param>
+</member>
+<member name="M:Chameleon.ColorHelper.CMYKtoColor(System.Single,System.Single,System.Single,System.Single)">
+ <summary>
+ Converts CMYK to RGB.
+ </summary >
+ <param name="c">Cyan value (must be between 0 and 1).</param>
+ <param name="m">Magenta value (must be between 0 and 1).</param>
+ <param name="y">Yellow value (must be between 0 and 1).</param>
+ <param name="k">Black value (must be between 0 and 1).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.CMYKtoColor(System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ Converts CMYK to RGB.
+ </summary >
+ <param name="c">Cyan value (must be between 0 and 1).</param>
+ <param name="m">Magenta value (must be between 0 and 1).</param>
+ <param name="y">Yellow value (must be between 0 and 1).</param>
+ <param name="k">Black value (must be between 0 and 1).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.CMYKtoColor(Chameleon.CMYK)">
+ <summary>
+ Converts CMYK to RGB.
+ </summary >
+ <param name="cmyk"></param>
+</member>
+<member name="M:Chameleon.ColorHelper.CMYKtoRGB(System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ Converts CMYK to RGB.
+ </summary >
+ <param name="c">Cyan value (must be between 0 and 1).</param>
+ <param name="m">Magenta value (must be between 0 and 1).</param>
+ <param name="y">Yellow value (must be between 0 and 1).</param>
+ <param name="k">Black value (must be between 0 and 1).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.CMYKtoRGB(Chameleon.CMYK)">
+ <summary>
+ Converts CMYK to RGB.
+ </summary >
+ <param name="cmyk"></param>
+</member>
+<member name="M:Chameleon.ColorHelper.YUVtoRGB(System.Double,System.Double,System.Double)">
+ <summary>
+ Converts YUV to RGB.
+ </summary >
+ <param name="y">Y (must be between 0 and 1).</param>
+ <param name="u">U (must be between -0.436 and 0.436).</param>
+ <param name="v">V (must be between -0.436 and 0.436).</param>
+</member>
+<member name="M:Chameleon.ColorHelper.YUVtoRGB(Chameleon.YUV)">
+ <summary>
+ Converts YUV to RGB.
+ </summary >
+</member>
+<member name="M:Chameleon.ColorHelper.YUVtoColor(System.Double,System.Double,System.Double)">
+ <summary>
+ Converts YUV to a .net Color.
+ </summary >
+ <param name="y">Y must be in [0, 1].</param>
+ <param name="u">U must be in [-0.436, +0.436].</param>
+ <param name="v">V must be in [-0.615, +0.615].</param>
+</member>
+<member name="M:Chameleon.ColorHelper.YUVtoColor(Chameleon.YUV)">
+ <summary>
+ Converts YUV to a .net Color.
+ </summary >
+</member>
+<member name="M:Chameleon.ColorHelper.XYZtoRGB(System.Double,System.Double,System.Double)">
+ <summary>
+ Converts CIEXYZ to RGB structure.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.XYZtoRGB(System.Object)">
+ <summary>
+ Converts CIEXYZ to RGB structure.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.Fxyz(System.Double)">
+ <summary>
+ XYZ to L*a*b* transformation function.
+ </summary>
+ <param name="t"></param>
+ <returns></returns>
+</member>
+<member name="M:Chameleon.ColorHelper.XYZtoLab(System.Double,System.Double,System.Double)">
+ <summary>
+ Converts CIEXYZ to CIELab structure.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.XYZtoLab(Chameleon.CIEXYZ)">
+ <summary>
+ Converts CIEXYZ to CIELab structure.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.LabtoXYZ(System.Double,System.Double,System.Double)">
+ <summary>
+ Converts CIELab to CIEXYZ.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.LabtoXYZ(Chameleon.CIELab)">
+ <summary>
+ Converts CIELab to CIEXYZ.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.LabtoRGB(System.Double,System.Double,System.Double)">
+ <summary>
+ Converts CIELab to RGB.
+ </summary>
+</member>
+<member name="M:Chameleon.ColorHelper.LabtoRGB(Chameleon.CIELab)">
+ <summary>
+ Converts CIELab to RGB.
+ </summary>
+</member>
+<member name="T:Chameleon.HSB">
+ <summary>
+ Structure to define HSB.
+ </summary>
+</member>
+<member name="M:Chameleon.HSB.#ctor(System.Double,System.Double,System.Double)">
+ <summary>
+ Creates an instance of a HSB structure.
+ </summary>
+ <param name="h">Hue value (must be between 0 and 360).</param>
+ <param name="s">Saturation value (must be between 0 and 1).</param>
+ <param name="b">Brightness value (must be between 0 and 1).</param>
+</member>
+<member name="T:Chameleon.HSL">
+ <summary>
+ Structure to define HSL.
+ </summary>
+</member>
+<member name="M:Chameleon.HSL.#ctor(System.Double,System.Double,System.Double)">
+ <summary>
+ Creates an instance of a HSL structure.
+ </summary>
+ <param name="h">Hue value (must be between 0 and 360).</param>
+ <param name="s">Saturation value (must be between 0 and 1).</param>
+ <param name="l">Luminance value (must be between 0 and 1).</param>
+</member>
+<member name="T:Chameleon.RGB">
+ <summary>
+ Structure to define RGB.
+ </summary>
+</member>
+<member name="M:Chameleon.RGB.#ctor(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Creates an instance of a RGB structure.
+ </summary>
+ <param name="r">Red value (must be between 0 and 255).</param>
+ <param name="g">Green value (must be between 0 and 255).</param>
+ <param name="b">Blue value (must be between 0 and 255).</param>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pAstronomyClass.sunrise">
+ <summary>
+  Today's sunrise time. The time is a string in a local time format of "h:mm am/pm", for example "7:02 am" 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pAstronomyClass.sunset">
+ <summary>
+  Today's sunset time. The time is a string in a local time format of "h:mm am/pm", for example "4:51 pm"
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pAtmosphereClass.humidity">
+ <summary>
+  Humidity, in percent 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pAtmosphereClass.visibility">
+ <summary>
+   In the units specified by the distance attribute of the units element (mi or km). Note that the visibility is specified as the actual value * 100. For example, a visibility of 16.5 miles will be specified as 1650. A visibility of 14 kilometers will appear as 1400. 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pAtmosphereClass.pressure">
+ <summary>
+  Barometric pressure, in the units specified by the pressure attribute of the units element (in or mb).
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pAtmosphereClass.rising">
+ <summary>
+  The State of the barometric pressure,   steady = 0, rising = 1, falling = 2
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.title">
+ <summary>
+  The title of the feed, which includes the location city. For example "Yahoo! Weather - Sunnyvale, CA" 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.link">
+ <summary>
+  The URL for the Yahoo! Weather page of the forecast for this location. For example http://us.rd.yahoo.com/dailynews/rss/weather/ Sunnyvale__CA/ *http://xml.weather.yahoo.com/ forecast/94089_f.html
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.language">
+ <summary>
+  The language of the weather forecast, for example, en-us for US English. 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.description">
+ <summary>
+  The overall description of the feed including the location, for example "Yahoo! Weather for Sunnyvale, CA" 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.lastBuildDate">
+ <summary>
+  The last time the feed was updated. The format is in the date format defined by RFC822 Section 5, for example Mon, 256 Sep 17:25:18 -0700.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.ttl">
+ <summary>
+  Time to Live; how long in minutes this feed should be cached. 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.location">
+ <summary>
+  The location of this forecast.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.units">
+ <summary>
+  Units for various aspects of the forecast.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.wind">
+ <summary>
+  Forecast information about wind.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.atmosphere">
+ <summary>
+  Forecast information about current atmospheric pressure, humidity, and visibility.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.astronomy">
+ <summary>
+  Forecast information about current astronomical conditions.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.image">
+ <summary>
+  The image used to identify this feed
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.item">
+ <summary>
+  The local weather conditions and forecast for a specific location.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pConditionClass.text">
+ <summary>
+  The textual description of conditions, for example, "Partly Cloudy"  
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pConditionClass.code">
+ <summary>
+  The condition code for this forecast. You could use this code to choose a text description or image for the forecast.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pConditionClass.temp">
+ <summary>
+  The current temperature, in the units specified by the units element 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pConditionClass.date">
+ <summary>
+  The current date and time for which this forecast applies. The date is in RFC822 Section 5 format, for example "Wed, 30 Nov 2005 1:56 pm PST" 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pForecastClass.day">
+ <summary>
+   The day of the week to which this forecast applies. Possible values are Mon Tue Wed Thu Fri Sat Sun 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pForecastClass.date">
+ <summary>
+  The date to which this forecast applies. The date is in "dd Mmm yyyy" format, for example "30 Nov 2005"
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pForecastClass.low">
+ <summary>
+  The forecasted low temperature for this day, in the units specified by the units element 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pForecastClass.high">
+ <summary>
+  The forecasted high temperature for this day, in the units specified by the units element  
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pForecastClass.text">
+ <summary>
+  A textual description of conditions, for example, "Partly Cloudy"
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pForecastClass.code">
+ <summary>
+  The condition code for this forecast. You could use this code to choose a text description or image for the forecast.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.title">
+ <summary>
+  The forecast title and time, for example "Conditions for New York, NY at 1:51 pm EST" 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.link">
+ <summary>
+  The Yahoo! Weather URL for this forecast. 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.description">
+ <summary>
+  A simple summary of the current conditions and two-day forecast, in HTML format, including a link to Yahoo! Weather for the full forecast.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.guid">
+ <summary>
+  Unique identifier for the forecast, made up of the location ID, the date, and the time. The attribute isPermaLink is false. 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.pubDate">
+ <summary>
+  The date and time this forecast was posted, in the date format defined by RFC822 Section 5, for example Mon, 25 Sep 17:25:18 -0700. 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.lat">
+ <summary>
+  The latitude of the location.
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.long">
+ <summary>
+  The longitude of the location
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.condition">
+ <summary>
+  The longitude of the location
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pItemClass.forecast">
+ <summary>
+  The longitude of the location
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pImageClass.title">
+ <summary>
+  The title of the image, for example "Yahoo! Weather"
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pImageClass.link">
+ <summary>
+  The URL of Yahoo! Weather 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pImageClass.url">
+ <summary>
+  The URL of the image
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pImageClass.width">
+ <summary>
+  The width of the image, in pixels
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pImageClass.height">
+ <summary>
+  The height of the image, in pixels
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pLocationClass.city">
+ <summary>
+ The city's name
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pLocationClass.region">
+ <summary>
+  The state, territory, or region, if given
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pLocationClass.country">
+ <summary>
+  The 2 character country code
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pUnitsClass.temperature">
+ <summary>
+  Degree units used, f for Fahrenheit or c for Celsius
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pUnitsClass.distance">
+ <summary>
+  Units for distance, mi for miles or km for kilometers
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pUnitsClass.pressure">
+ <summary>
+  Units of barometric pressure, in for pounds per square inch or mb for millibars
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pUnitsClass.speed">
+ <summary>
+  Units of speed, mph for miles per hour or kph for kilometers per hour 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pWindClass.chill">
+ <summary>
+  wind chill in degrees 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pWindClass.direction">
+ <summary>
+  wind direction, in degrees 
+ </summary>
+</member>
+<member name="P:Chameleon.pWeatherForecast.pRssClass.pChannelClass.pWindClass.speed">
+ <summary>
+  wind speed, in the units specified in the speed attribute of the units element (mph or kph). 
+ </summary>
+</member>
+<member name="M:Chameleon.pWeatherForecast.#ctor(System.String,Chameleon.pWeatherForecast.temperatureUnit)">
+ <summary>
+ 
+ </summary>
+ <param name="Location">The location to get the weather for</param>
+ <param name="Unit">Units for temperature.  f: Fahrenheit   c: Celsius</param>
+ <remarks></remarks>
+</member>
+<member name="T:Chameleon.YUV">
+ <summary>
+ Structure to define YUV.
+ </summary>
+</member>
+<member name="M:Chameleon.YUV.#ctor(System.Double,System.Double,System.Double)">
+ <summary>
+ Creates an instance of a YUV structure.
+ </summary>
+ <param name="y">Y (must be between 0 and 1).</param>
+ <param name="u">U (must be between -0.436 and 0.436).</param>
+ <param name="v">V (must be between -0.436 and 0.436).</param>
+</member>
+</members>
+</doc>

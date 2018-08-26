@@ -1,0 +1,45 @@
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\bin\Release\Chameleon.exe.config
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\bin\Release\Chameleon.exe
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\bin\Release\Chameleon.pdb
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\bin\Release\Chameleon.xml
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\bin\Release\Tundra.dll
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\bin\Release\Tundra.pdb
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\bin\Release\Tundra.xml
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.vbprojResolveAssemblyReference.cache
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.dlgAbout.resources
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.dlgSettings.resources
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.frmMain.resources
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.Resources.resources
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.vbproj.GenerateResource.Cache
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.exe
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.xml
+C:\Users\Ian Martinez\Documents\Visual Studio 2010\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.pdb
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Chameleon.exe.config
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Chameleon.exe.manifest
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Chameleon.application
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Chameleon.exe
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Chameleon.pdb
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Chameleon.xml
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\AForge.dll
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\AForge.Video.DirectShow.dll
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\AForge.Video.dll
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\RegistryUtils.dll
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\TrackBar.dll
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Tundra.dll
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Tundra.pdb
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\bin\Release\Tundra.xml
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.vbprojResolveAssemblyReference.cache
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.dlgAbout.resources
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.dlgAdjustAero.resources
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.dlgSettings.resources
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.dlgTheme.resources
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.frmMain.resources
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.frmPreviewAero.resources
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.Resources.resources
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.WebcamFrame.resources
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.vbproj.GenerateResource.Cache
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.exe.manifest
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.application
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.exe
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.xml
+C:\Users\Ian\Desktop\Projects\Chameleon\Chameleon\obj\x86\Release\Chameleon.pdb

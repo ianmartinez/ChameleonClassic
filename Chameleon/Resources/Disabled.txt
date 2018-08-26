@@ -1,0 +1,8 @@
+Radius=3
+
+Active Colors=235,236,237|235,236,237
+Active Positions=0|1
+Active Angle=90
+Active Border Color=#c9c9c9
+Active Text Color=64,64,64
+Active Highlight Color=230,255,255,255
